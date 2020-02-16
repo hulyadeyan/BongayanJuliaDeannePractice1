@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form onsubmit="return validate()">
+    <label id="EventType">Event Type:</label>
+    <select class="EventType" id="type" name="INPUTevents" required>
+        <option value="0">Choose one</option>
+        <option value="business">Business Events</option>
+        <option value="regular">Regular Events</option>
+        <option value="special">Special Events</option>
+        <option value="sports">Sporting Events</option>
+        <option value="workout">Workout Class</option>
+      </select>
+
+<div class="EventTitle">
+    <label id = "EventTitle">Event Title: </label>
+    <input type = "text" name = "INPUTtitle" id = "title"  class= "Title" required>
+</div>
+ 
+<div class="EventDate">
+    <label for="EventDate">Event Dates:</label>
+    <input id="dateFrom" type="date" name="INPUTdates" class="FromDate" required>
+    <label for="EventDate">to</label>
+    <input id="dateTo" type="date" name="INPUTdates2" required>
+</div>
+
+<div class="PostDate">
+    <label id="PostDate">Posting Date:</label>
+    <input type="date" name="INPUTpost"  id="post" class="postDate" required>
+</div>
+
+<div class="checkbox">
+    <input id="C1" type="checkbox" name="CheckBox1">
+    <label for="checkbox1">Is Registration Required?</label><br>
+
+    <input id="C2" type="checkbox" name="CheckBox2">
+    <label for="checkbox2">Is this event associated with any Family Programs?</label><br>
+
+    <input id="C3" type="checkbox" name="CheckBox3" >
+    <label for="checkbox3">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br>
+    
+    <input id="C4" type="checkbox" name="CheckBox4">
+    <label for="checkbox4">Is There a Point of Contact?</label><br>
+
+    <input id="C5" type="checkbox" name="CheckBox5">
+    <label for="CheckBox5">Is There a Hosting Commant Point of Contact?</label><br><br>
+
+
+    <input id="Save" class="save" type="submit" value="Save" onsubmit="validate()">
+    <input id="Reset" class="cancel" type="reset" value="Cancel">
+</div>
+</form>
+</body>
+</html>

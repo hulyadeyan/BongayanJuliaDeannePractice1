@@ -1,0 +1,52 @@
+.EventType{
+    margin-top: 20px;
+    margin-bottom: 15px ;
+    margin-left: 5%;
+}
+.EventTitle{
+    margin-bottom: 15px ;
+}
+.title{
+    margin-left: 60%;
+}
+input[type=text]{
+    width: 45%;
+}
+select{
+    width: 30%;
+}
+.EventDate{
+    margin-bottom: 15px ;
+}
+
+.PostDate{
+    margin-bottom: 15px ;
+}
+input[type=date]{
+    width:18%;
+}
+.checkbox{
+    line-height: 20pt;
+    margin-bottom: 15px ;
+}
+body{
+    padding: 20px 23px 20px 50px;
+    font-family: sans-serif;
+    border: 2px solid black;
+    margin: 20%;
+}
+.save, .cancel{
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+.save:hover, .cancel:hover{
+    background-color: rgb(21, 157, 202);
+    color: white;
+    cursor: pointer;
+}
+.save{
+    margin-left: 35%;
+}
+.cancel{
+    margin-left: 30px;
+}
